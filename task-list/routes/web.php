@@ -5,7 +5,9 @@ use Illuminate\Support\Facades\Route;
 //php artisan route:list  ##### to see the route list
 
 Route::get('/', function () {
-    return "Main page";
+    return view('index', [
+        'name' => 'Haque'
+    ]);
 });
 
 Route::get('/xxx', function () {
